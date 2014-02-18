@@ -1,0 +1,9 @@
+1: Install and configure the PocketEssentials. 
+2: Make a mine world with ores and make a bedrock spawn. 
+3: Make a preset planet world and set spawn. 
+4: Copy Planet.php to {PocketMine}/plugins/PMEssPlugins/ folder. 
+5: Copy your two worlds folder to {PocketMine} folder and makre sure they are in PocketMine world format. 
+6: Edit Planet.php in your PMEssPlugins folder and change the world name. 
+7: Put signs on your server: 
+[planet]		[planet]
+enter		delete
