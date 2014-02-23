@@ -196,7 +196,7 @@ class KVPlanet implements Plugin{
         $this->api->chat->send(false, $this->CHAT_PREFIX . "Mine is being reset...");
         $level = $this->api->level->get($this->mineName);
         if(!($level instanceof Level)){
-            $this->api->chat->send(false, $this->CHAT_PREFIX . "Mine faild to reset! [Reset per 24 hour]");
+            $this->api->chat->send(false, $this->CHAT_PREFIX . "Mine faild to reset! [Reset every 24 hours]");
         }
         $pos = $this->api->warp->getWarp($this->mineResetWarpName);
         if($pos instanceof Position){
@@ -208,7 +208,7 @@ class KVPlanet implements Plugin{
         $this->api->file->deleteFolder(FILE_PATH . "worlds/" . $this->mineName);
         $this->api->file->copyFolder(FILE_PATH . $this->presetMine, FILE_PATH . "worlds/" . $this->mineName);
         $this->api->level->loadLevel($this->mineName);
-        $this->api->chat->send(false, $this->CHAT_PREFIX . "Mine has been reset! [Reset per 24 hour]");
+        $this->api->chat->send(false, $this->CHAT_PREFIX . "Mine has been reseted! [Reset every 24 hours]");
     }
 
     
