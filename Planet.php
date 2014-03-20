@@ -54,7 +54,7 @@ Mines{
 class KVPlanet implements Plugin{
 	private $api;
     //private $mines = array();
-    private $CHAT_PREFIX = "● [Planet]";
+    private $CHAT_PREFIX = "● [Planet] ";
     //private $SESSION = "prison_mine";
     private $presetFolderName = "planetpreset";
     private $presetMine = "minepreset";
