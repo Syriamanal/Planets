@@ -90,7 +90,6 @@ class KVPlanet implements Plugin{
         }
         $c = strtolower(array_shift($arg));
         switch($c){
-            /*
             case "help":
                 if(count($arg) != 1){
                     return($this->getHelp(1));
@@ -166,7 +165,6 @@ class KVPlanet implements Plugin{
                     return($this->CHAT_PREFIX . "No block exists in mine " . $mineName . ". ");
                 }
                 break;
-                */
             case "reset":
                 /*
                 if(count($arg) != 1){
